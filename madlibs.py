@@ -44,7 +44,26 @@ def show_madlib():
     color=request.args.get("color")
     adjective=request.args.get("adjective")
     noun=request.args.get("noun")
-    return render_template("madlib.html", name=name, color=color, adjective=adjective, noun=noun)
+    adjective4=request.args.get("adjective4") 
+    print adjective4
+    verb_ed=request.args.get("verb_ed")
+    noun_p=request.args.get("noun_p")
+    liquid=request.args.get("liquid")
+    noun_p2=request.args.get("noun_p2")
+    famous=request.args.get("famous")
+    place=request.args.get("place")
+    adjective2=request.args.get("adjective2")
+    noun2=request.args.get("noun2")
+    nationality=request.args.get("nationality")
+    f_celebrity=request.args.get("f_celebrity")
+    noun_p3=request.args.get("noun_p3")
+    number=request.args.get("number")
+    adjective3=request.args.get("adjective3")
+
+    return render_template("madlib.html", adjective4=adjective4,verb_ed=verb_ed, 
+        noun_p=noun_p, liquid=liquid, noun_p2=noun_p2, famous=famous, place=place, adjective2=adjective2,
+        noun2=noun2, nationality=nationality, f_celebrity=f_celebrity, noun_p3=noun_p3, number=number,
+        adjective3=adjective3)
 
 
 
